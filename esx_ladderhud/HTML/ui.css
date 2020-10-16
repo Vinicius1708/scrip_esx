@@ -1,0 +1,89 @@
+/*
+    esx_ladderhud
+    Copyright C 2018  MarmotaGit
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU Affero General Public License as published
+    by the Free Software Foundation, either version 3 of the License, or
+    at your option any later version.
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU Affero General Public License for more details.
+    You should have received a copy of the GNU Affero General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
+
+.container-fluid {
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    right: 1.5vw;
+    bottom: 0;
+    transition: right 1.0s;
+}
+
+.container {
+    display: inline-block;
+}
+.circle {
+    height: 2.5vw;
+    width: 2.5vw;
+    background-color: rgba(20, 10, 20);
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-size: 2vw 2vw;
+    background-position: center;
+}
+#circle-hunger {
+    background-image: url("https://image.flaticon.com/icons/svg/871/871350.svg");
+    border: 0.1vw rgb(206, 144, 29, 0.5) solid;
+    float: right;
+    box-shadow: 0px 0px 5px 5px rgba(206, 144, 29, 0.2);
+}
+#circle-thirst {
+    background-image: url("https://image.flaticon.com/icons/svg/875/875259.svg");
+    border: 0.1vw rgba(38, 95, 194, 0.5) solid;
+    margin-right: 8vw;
+    float: right;
+    box-shadow: 0px 0px 5px 5px rgba(38, 95, 194, 0.3);
+}
+.progress {
+    position: absolute;
+    z-index: -1;
+    height: 0.7vw;
+    width: 9vw;
+    border-radius: 0.5vw;
+    background-color: rgba(20, 10, 20, 0.3);
+}
+#progress-hunger {
+    margin-top: 1.5vw;
+    margin-right: 1.4vw;
+    border-radius: 0.5vw;
+    border: 0.1vw rgb(206, 144, 29, 0.5) solid;
+    right: 0.4vw;
+}
+
+#progress-thirst {
+    margin-left:1.7vw;
+    margin-top: 0.5vw;
+    border: 0.1vw rgba(38, 95, 194, 0.5) solid;
+
+}
+.field {
+    margin: 0;
+    padding: 0;
+    height: 100% !important;
+    width: 100%;
+    border-radius: 0.5vw;
+    transition: width 1.0s;
+}
+#hunger {
+    float: right;
+    vertical-align: center;
+    background-color: rgb(206, 144, 29);
+}
+#thirst {
+    float: left;
+    background-color: rgba(38, 95, 194);
+}
